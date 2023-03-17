@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/javapro/UnitTest">
+        <classes>
+
+            <class name="org.example.LoginScipt">
+                <methods>
+                    <include name="verifyLoginCredentials"/>
+                </methods>
+            </class>
+            <class name="org.example.GradeTest">
+                <methods>
+                    <include name="FiftyNineShouldReturnF"/>
+                    <include name="SixtyNineShouldReturnD"/>
+                    <include name="eightyNineShouldReturnB"/>
+                    <include name="negativeOneShouldReturnIllegalArgumentException"/>
+                 </methods>
+            </class>
+<!--            </class>-->
+<!--            <class name="org.example.LoginTestTest">-->
+<!--                <methods>-->
+<!--                    <include name="verifyLoginCredentials"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+            <class name="org.example.SimpleCalculatorTest">
+                <methods>
+                    <include name="twoPlusTwoShouldEqualFour"/>
+                    <include name="ThreePlusTwoShouldEqualFour"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
